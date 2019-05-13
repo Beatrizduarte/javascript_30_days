@@ -21,8 +21,8 @@ function setDate(){ // é uma função do proprio JS para passar informações d
     const minsDegrees = ((mins / 60) * 360)+ 90
     minsHand.style.transform = `rotate(${minsDegrees}deg)`
 
-    const hour = now.getMinutes()
-    const hourDegrees = ((mins / 12) * 360)+ 90
+    const hour = now.getHours()
+    const hourDegrees = ((hour / 12) * 360)+ 90
     hourHand.style.transform = `rotate(${hourDegrees}deg)`
 
     
